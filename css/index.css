@@ -1,0 +1,175 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.main {
+    height: 928px;
+    width: 60%;
+    background-color: aquamarine;
+    margin: auto;
+}
+
+.main header {
+    height: 150px;
+    width:100%;
+    background-color: skyblue;
+}
+
+
+/* 导航栏 */
+.main nav {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(14, 73, 112);;
+}
+
+.main nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main nav div {
+    width: 100px;
+}
+
+.main nav div span {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    font-family:sans-serif;
+    font-weight: bold;
+    letter-spacing: 5px;
+    transition: all 1s linear;
+    cursor: pointer;
+}
+
+.main nav div .content {
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    font-family: '微软雅黑';
+    visibility: hidden;
+    cursor: pointer;
+    line-height: 30px;
+    padding: 5px 0px;
+}
+
+.main nav div:hover span {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main nav div:hover .content {
+    visibility: visible;
+    z-index: 1;
+}
+
+
+
+
+/* 侧边栏和banner */
+.aside_banner {
+    height: 500px;
+    width: 100%;
+    background-color: rgb(222, 244, 247);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.aside_banner aside,.banner {
+    border-radius: 10px;
+    height: 80%;
+    box-sizing: border-box;
+}
+
+/* 侧边栏 */
+.aside_banner aside {
+    font-size: 25px;
+    padding: 30px 30px;
+    width: 20%;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.aside_banner aside span {
+    font-weight: bold;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.aside_banner aside li {
+    display: block;
+    line-height: 50px;
+    color:rgb(110, 110, 110);
+    font-size: 20px;
+    letter-spacing: 3px;
+    border: 1px solid lightgray;
+    padding-left: 10px;
+}
+
+.aside_banner .banner {
+    width: 60%;
+    background-color: sandybrown;
+    overflow: hidden;
+}
+
+@keyframes banner {
+    0% {
+        transform: translateX(0);
+    }
+    12% {
+        transform: translateX(0);
+    }
+    12.5% {
+        transform: translateX(-25%);
+    }
+    22.5% {
+        transform: translateX(-25%);
+    }
+    25% {
+        transform: translateX(-50%);
+    }
+    37% {
+        transform: translateX(-50%);
+    }
+    37.5% {
+        transform: translateX(-75%);
+    }
+    50%{
+        transform: translateX(-75%);
+    }
+    50.5% {
+        transform: translateX(25%);
+    }
+    62.5% {
+        transform: translateX(25%);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/* 存放照片 */
+.aside_banner .banner .flex {
+    width: 400%;
+    height: 100%;
+    overflow: hidden;
+    animation: banner 15s linear;
+    animation-iteration-count: infinite;
+}
+
+/* 图片 */
+.aside_banner .banner .flex img {
+    width: 25%;
+    float: left;
+}
+

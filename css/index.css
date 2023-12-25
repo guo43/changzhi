@@ -122,7 +122,7 @@ li {
     background-color: sandybrown;
     overflow: hidden;
 }
-
+/* 
 @keyframes banner {
     0% {
         transform: translateX(0);
@@ -170,7 +170,34 @@ li {
         transform: translateX(100%);
     }
 }
+ */
 
+@keyframes banner {
+    0% {
+        transform: translateX(0);
+    }
+    23.5% {
+        transform: translateX(0%);
+    }
+    25.5% {
+        transform: translateX(-25%);
+    }
+    49% {
+        transform: translateX(-25%);
+    }
+    51% {
+        transform: translateX(-50%);
+    }
+    74.5% {
+        transform: translateX(-50%);
+    }
+    76.5% {
+        transform: translateX(-75%);
+    }
+    100% {
+        transform: translateX(-75%);
+    }
+}
 
 /* 存放照片 */
 .aside_banner .banner .flex {
@@ -180,6 +207,7 @@ li {
     animation: banner 15s linear;
     animation-iteration-count: infinite;
     position: relative;
+    animation-direction: alternate;
 }
 
 /* 图片 */

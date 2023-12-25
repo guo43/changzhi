@@ -118,6 +118,7 @@ li {
 
 .aside_banner .banner {
     width: 60%;
+    height: 50%;
     background-color: sandybrown;
     overflow: hidden;
 }
@@ -126,37 +127,50 @@ li {
     0% {
         transform: translateX(0);
     }
-    12% {
+    12.35% {
         transform: translateX(0);
     }
-    12.5% {
+    12.55% {
         transform: translateX(-25%);
     }
-    22.5% {
+    24.9% {
         transform: translateX(-25%);
     }
-    25% {
+    25.1% {
         transform: translateX(-50%);
     }
-    37% {
+    37.45% {
         transform: translateX(-50%);
     }
-    37.5% {
+    37.65% {
         transform: translateX(-75%);
     }
     50%{
         transform: translateX(-75%);
     }
-    50.5% {
+    50.2% {
         transform: translateX(25%);
     }
-    62.5% {
+    62.55% {
         transform: translateX(25%);
+    }
+    62.75% {
+        transform: translateX(50%);
+    }
+    75.1% {
+        transform: translateX(50%);
+    }
+    87.65% {
+        transform: translateX(75%);
+    }
+    87.85% {
+        transform: translateX(75%);
     }
     100% {
-        transform: translateX(0px);
+        transform: translateX(100%);
     }
 }
+
 
 /* 存放照片 */
 .aside_banner .banner .flex {
@@ -165,6 +179,7 @@ li {
     overflow: hidden;
     animation: banner 15s linear;
     animation-iteration-count: infinite;
+    position: relative;
 }
 
 /* 图片 */
